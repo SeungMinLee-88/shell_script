@@ -1,0 +1,48 @@
+-------------------------------------SYSTEM VULNERABILITY DETECTED LIST-----------------------------------
+***************************************OS VERSION : Linux release 7***************************************
+----------------------------------------------------------------------------------------------------------
+# U-02 PASSWORD COMPLEXITY
+retry = 3 IS SET
+minlen = 8 IS SET
+lcredit = 1 IS SET
+ucredit = 1 IS SET
+dcredit = 1 IS SET
+difok = N IS SET
+
+# U-46/47/48 PASSWORD POLICY
+PASSWORD POLICY : DETECTED
+PASS_MIN_LEN IS SET
+PASS_MAX_DAYS IS NOT SET
+PASS_MIN_DAY IS NOT SET
+
+# U-03 ACCOUNT LOCK POLICY
+ACCOUNT LOCK POLICY : DETECTED
+pam_tally2.so IS NOT SET
+deny=5 IS NOT SET
+unlock_time=60 IS NOT SET
+no_magic_root IS NOT SET
+reset IS NOT SET
+
+# U-04 PASSWD FILE CONFIG
+SHADOW FILE : UNDECTECTED
+USER PASSWORD ENCRYPT : DECTECTED
+USER " dockerroot " PASSWORD IS NOT ENCRYPT(SECONDFILE :)
+
+#U-16 PROFILE ENVIRONMENT
+ROOT PROFILE : NOT EXITS
+GLOBAL PROFILE IS EXITS
+GLOBAL PROFILE VULNERABILITY : DECTECTED
+
+#U-18/19 USER FILE PERMISSION
+/root/targetconfig/passwd_test IS LEAK
+/root/targetconfig/shadow_test IS LEAK
+
+#U-24 SID, SGID, STICKY BIT
+restore  FILE IS LEAK
+unix_chkpwd  FILE IS LEAK
+
+#U-17 NO OWNER
+/root/targetconfig/nousertarget/spool/mail/testest FILE HAS NO OWNER
+/root/targetconfig/nousertarget/bin/binnousertest2 FILE HAS NO OWNER
+/root/targetconfig/nousertarget/bin/binnousertest1 FILE HAS NO OWNER
+

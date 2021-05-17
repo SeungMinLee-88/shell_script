@@ -1,0 +1,19 @@
+
+system is RHEL 7
+retry = 3 is not set
+minlen = 8 is not set
+lcredit = 1 is not set
+ucredit = 1 is set
+dcredit = 1 is not set
+difok = N is not set
+login.defs check
+PASS_MIN_DAYS is set
+PASS_MIN_LEN is set
+PASS_WARN_AGE is set
+system is RHEL 7
+deny=5 unlock_time=60 is not set
+no_magic_root reset is not set
+shadow file is exits
+global profile is vulnerability
+5644  file is leak
+4755  file is leak

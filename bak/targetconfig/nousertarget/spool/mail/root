@@ -1,0 +1,64 @@
+From root@localhost.localdomain  Tue Jan  5 20:07:50 2021
+Return-Path: <root@localhost.localdomain>
+X-Original-To: root
+Delivered-To: root@localhost.localdomain
+Received: by localhost.localdomain (Postfix, from userid 0)
+	id 60AD58DCD34; Tue,  5 Jan 2021 20:07:50 +0900 (KST)
+To: root@localhost.localdomain
+From: shelltest@localhost.localdomain
+Auto-Submitted: auto-generated
+Subject: *** SECURITY information for localhost.localdomain ***
+Message-Id: <20210105110750.60AD58DCD34@localhost.localdomain>
+Date: Tue,  5 Jan 2021 20:07:50 +0900 (KST)
+
+localhost.localdomain : Jan  5 20:07:50 : shelltest : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/shelltest ; USER=root ; COMMAND=/bin/sh shelltest.sh
+
+
+From root@localhost.localdomain  Thu Jan 14 20:55:12 2021
+Return-Path: <root@localhost.localdomain>
+X-Original-To: root
+Delivered-To: root@localhost.localdomain
+Received: by localhost.localdomain (Postfix, from userid 0)
+	id 20F8391235D; Thu, 14 Jan 2021 20:55:12 +0900 (KST)
+To: root@localhost.localdomain
+From: www-data@localhost.localdomain
+Auto-Submitted: auto-generated
+Subject: *** SECURITY information for localhost.localdomain ***
+Message-Id: <20210114115512.20F8391235D@localhost.localdomain>
+Date: Thu, 14 Jan 2021 20:55:12 +0900 (KST)
+
+localhost.localdomain : Jan 14 20:55:12 : www-data : user NOT in sudoers ; TTY=pts/1 ; PWD=/home/laravel/nginx-1.9.9 ; USER=root ; COMMAND=/bin/systemctl stop nginx.service
+
+
+From root@localhost.localdomain  Thu Jan 14 20:55:22 2021
+Return-Path: <root@localhost.localdomain>
+X-Original-To: root
+Delivered-To: root@localhost.localdomain
+Received: by localhost.localdomain (Postfix, from userid 0)
+	id 2F180802A01; Thu, 14 Jan 2021 20:55:22 +0900 (KST)
+To: root@localhost.localdomain
+From: www-data@localhost.localdomain
+Auto-Submitted: auto-generated
+Subject: *** SECURITY information for localhost.localdomain ***
+Message-Id: <20210114115522.2F180802A01@localhost.localdomain>
+Date: Thu, 14 Jan 2021 20:55:22 +0900 (KST)
+
+localhost.localdomain : Jan 14 20:55:22 : www-data : user NOT in sudoers ; TTY=pts/1 ; PWD=/home/laravel/nginx-1.9.9 ; USER=root ; COMMAND=/bin/systemctl stop nginx.service
+
+
+From root@master.localdomain  Mon Feb 15 19:53:51 2021
+Return-Path: <root@master.localdomain>
+X-Original-To: root
+Delivered-To: root@master.localdomain
+Received: by master.localdomain (Postfix, from userid 0)
+	id 4F248991453; Mon, 15 Feb 2021 19:53:51 +0900 (KST)
+To: root@master.localdomain
+From: master@master.localdomain
+Auto-Submitted: auto-generated
+Subject: *** SECURITY information for master ***
+Message-Id: <20210215105351.4F248991453@master.localdomain>
+Date: Mon, 15 Feb 2021 19:53:51 +0900 (KST)
+
+master : Feb 15 19:53:51 : master : user NOT in sudoers ; TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/cp -i /etc/kubernetes/admin.conf /home/master/.kube/config
+
+

@@ -1,0 +1,32 @@
+WARNING: CPU: 0 PID: 0 at net/sched/sch_generic.c:356 dev_watchdog+0x248/0x260
+NETDEV WATCHDOG: enp0s8 (e1000): transmit queue 0 timed out
+Modules linked in: sunrpc iosf_mbi crc32_pclmul ghash_clmulni_intel snd_intel8x0 snd_ac97_codec ac97_bus ppdev snd_seq snd_seq_device aesni_intel snd_pcm lrw gf128mul glue_helper ablk_helper cryptd pcspkr snd_timer sg video parport_pc snd parport soundcore i2c_piix4 ip_tables xfs libcrc32c sr_mod cdrom ata_generic sd_mod crc_t10dif crct10dif_generic pata_acpi ahci libahci ata_piix crct10dif_pclmul crct10dif_common libata e1000 crc32c_intel serio_raw dm_mirror dm_region_hash dm_log dm_mod
+CPU: 0 PID: 0 Comm: swapper/0 Not tainted 3.10.0-1160.15.2.el7.x86_64 #1
+Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Call Trace:
+<IRQ>  [<ffffffffafd81fba>] dump_stack+0x19/0x1b
+[<ffffffffaf69b1b8>] __warn+0xd8/0x100
+[<ffffffffaf69b23f>] warn_slowpath_fmt+0x5f/0x80
+[<ffffffffafc82f08>] dev_watchdog+0x248/0x260
+[<ffffffffafc82cc0>] ? dev_deactivate_queue.constprop.27+0x60/0x60
+[<ffffffffaf6abcf8>] call_timer_fn+0x38/0x110
+[<ffffffffafc82cc0>] ? dev_deactivate_queue.constprop.27+0x60/0x60
+[<ffffffffaf6ae38d>] run_timer_softirq+0x25d/0x330
+[<ffffffffaf6a4b35>] __do_softirq+0xf5/0x280
+[<ffffffffafd984ec>] call_softirq+0x1c/0x30
+[<ffffffffaf62f715>] do_softirq+0x65/0xa0
+[<ffffffffaf6a4eb5>] irq_exit+0x105/0x110
+[<ffffffffafd99a88>] smp_apic_timer_interrupt+0x48/0x60
+[<ffffffffafd95fba>] apic_timer_interrupt+0x16a/0x170
+<EOI>  [<ffffffffafd89c70>] ? __cpuidle_text_start+0x8/0x8
+[<ffffffffafd89ebb>] ? native_safe_halt+0xb/0x20
+[<ffffffffafd89c8e>] default_idle+0x1e/0xc0
+[<ffffffffaf637ca0>] arch_cpu_idle+0x20/0xc0
+[<ffffffffaf70142a>] cpu_startup_entry+0x14a/0x1e0
+[<ffffffffafd70647>] rest_init+0x77/0x80
+[<ffffffffb038b1cf>] start_kernel+0x44b/0x46c
+[<ffffffffb038ab84>] ? repair_env_string+0x5c/0x5c
+[<ffffffffb038a120>] ? early_idt_handler_array+0x120/0x120
+[<ffffffffb038a738>] x86_64_start_reservations+0x24/0x26
+[<ffffffffb038a88e>] x86_64_start_kernel+0x154/0x177
+[<ffffffffaf6000d5>] start_cpu+0x5/0x14

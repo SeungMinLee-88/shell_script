@@ -1,0 +1,13 @@
+/sbin/dump
+/sbin/restore
+/sbin/unix_chkpwd
+/usr/bin/at
+/usr/bin/ltq
+/usr/bin/ltq-lpd
+/usr/bin/lpr
+/usr/bin/lpr-lpd
+/usr/bin/lprm-lpd
+/usr/bin/nwgrp
+/usr/sbin/lpc
+/usr/sbin/lpc-lpd
+/usr/sbin/traceroute
